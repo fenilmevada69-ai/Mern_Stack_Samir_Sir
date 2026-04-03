@@ -36,3 +36,24 @@ app.jsx --> comment other component
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 copy this to index.html in head..
+
+<a href ="url"> : url
+component --> url
+Single Page Application
+
+react routing..
+3rd party lib: react-router-dom
+
+npm i react-router-dom
+
+ELEMNETS
+<BrowserRouter> : enable routing in react application: main.jsx
+<Routes>   : to hold all route will use Routes component
+<Route>    : to create urls will use Routes COmponent
+
+clear app.js <div></div>
+
+Singp .... index.html <a href --> page refresh
+<a> : remove this tag..
+<a> ---> <Link> component
+href --> to
