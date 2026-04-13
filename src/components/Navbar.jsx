@@ -42,6 +42,21 @@ export const Navbar = () => {
                 IPL TEAMS
               </Link>
             </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/usestatedemo1">
+                USE STATE DEMO 1
+              </Link>
+            </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/usestatedemo2">
+                USE STATE DEMO 2
+              </Link>
+            </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/usestatedemo3">
+                USE STATE DEMO 3
+              </Link>
+            </li>
             
             
           </ul>

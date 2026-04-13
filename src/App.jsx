@@ -21,6 +21,9 @@ import { Error404 } from "./components/Error404";
 import { Watch } from "./components/Netflix/Watch";
 import { Teams } from "./components/ipl/Teams";
 import { TeamDetail } from "./components/ipl/TeamDetail";
+import { UseStateDemo1 } from "./components/UseStateDemo1";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
+import { UseStateDemo3 } from "./components/UseStateDemo3";
 
 function App() {
  
@@ -35,6 +38,9 @@ function App() {
           <Route path="/shows" element ={<NetflixShows/>}></Route>
           <Route path="/teams" element ={<Teams/>}></Route>
           <Route path="/teamDetail/:id" element ={<TeamDetail/>}></Route>
+          <Route path ="/usestatedemo1" element = {<UseStateDemo1/>}></Route>
+          <Route path ="/usestatedemo2" element = {<UseStateDemo2/>}></Route>
+          <Route path ="/usestatedemo3" element = {<UseStateDemo3/>}></Route>    
           {/* <Route path="/watch" element = {<Watch/>}></Route> */}
           {/* <Route path="/watch/dhurandhar" element = {<Watch/>}></Route> */}
           <Route path="/watch/:name" element = {<Watch/>}></Route>

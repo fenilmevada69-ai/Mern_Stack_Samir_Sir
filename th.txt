@@ -57,3 +57,21 @@ Singp .... index.html <a href --> page refresh
 <a> : remove this tag..
 <a> ---> <Link> component
 href --> to
+
+
+hooks: builtin udf lifecycle functions --> hook
+all hhok name starts with --> use
+useState
+useEffect
+useParams
+useForm
+
+
+
+
+
+cosnt demo =()=>{
+
+    ....
+    return a,b
+}
