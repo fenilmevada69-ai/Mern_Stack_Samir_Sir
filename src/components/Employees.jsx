@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { EmployeeList } from './EmployeeList'
 
 export const Employees = () => {
@@ -9,13 +9,14 @@ export const Employees = () => {
         {id:3,name:"jay",age:24,salary:43000},
     ]
     var title=  "Emp-App"
+    const [count, setcount] = useState(0)
 
   return (
     <div style={{textAlign:"center"}}>
         <h1>EMPLOYEE COMPONENET</h1>
 
         {/* //child component */}
-        <EmployeeList employeeData ={employeeData} title ={title}></EmployeeList> 
+        <EmployeeList employeeData ={employeeData} title ={title} count={count}></EmployeeList> 
 
         {/* <EmployeeList empData ={employeeData}></EmployeeList>  */}
     </div>

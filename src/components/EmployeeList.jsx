@@ -15,6 +15,7 @@ export const EmployeeList = (props) => {
           return <li>{emp.id} - {emp.name}-{emp.age}</li>
         })
       }
+      <h1>Count = {props.count}</h1>
     </div>
   );
 };
