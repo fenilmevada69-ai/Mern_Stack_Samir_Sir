@@ -75,3 +75,22 @@ cosnt demo =()=>{
     ....
     return a,b
 }
+
+
+<--------------------------------------------------------------->
+
+10 group  ---> track 
+<---->
+PROPS:
+
+Parent child component:
+
+parent componet-->child component --> 
+PROPS
+COntenxt
+redux
+
+-->props property
+
+Employess Component --> Parent --> array
+EmployeeList Component -->Child --> print

@@ -24,6 +24,7 @@ import { TeamDetail } from "./components/ipl/TeamDetail";
 import { UseStateDemo1 } from "./components/UseStateDemo1";
 import { UseStateDemo2 } from "./components/UseStateDemo2";
 import { UseStateDemo3 } from "./components/UseStateDemo3";
+import { Employees } from "./components/Employees";
 
 function App() {
  
@@ -41,6 +42,7 @@ function App() {
           <Route path ="/usestatedemo1" element = {<UseStateDemo1/>}></Route>
           <Route path ="/usestatedemo2" element = {<UseStateDemo2/>}></Route>
           <Route path ="/usestatedemo3" element = {<UseStateDemo3/>}></Route>    
+          <Route path="/employees" element = {<Employees/>}></Route>
           {/* <Route path="/watch" element = {<Watch/>}></Route> */}
           {/* <Route path="/watch/dhurandhar" element = {<Watch/>}></Route> */}
           <Route path="/watch/:name" element = {<Watch/>}></Route>
