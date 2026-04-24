@@ -94,3 +94,15 @@ redux
 
 Employess Component --> Parent --> array
 EmployeeList Component -->Child --> print
+
+
+
+:table: header,tbody
+      : th ,tr -->
+
+json object --> {header} --> dynamic th
+json object -->row  --> td
+
+1 component --> table --> {id,name,email}
+
+2 component -->table --> {id name,email,age,status}
