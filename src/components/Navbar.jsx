@@ -67,6 +67,12 @@ export const Navbar = () => {
                 students
               </Link>
             </li>
+            <li class="nav-item active">
+              <Link class="nav-link" to="/tabledemo">
+                tabledemo
+              </Link>
+            </li>
+            
             
             
             
