@@ -5,6 +5,7 @@ export const InputDemo1 = () => {
     const [name, setname] = useState("")
     const [email, setemail] = useState("")
     const [address, setaddress] = useState("")
+    const [isClicked, setisClicked] = useState(false)
 
     const nameHandler = (event)=>{
         //console.log("name handler called...",event)
@@ -23,18 +24,30 @@ export const InputDemo1 = () => {
         <div>
             <label>NAME :</label>
             <input type='text' onChange={(event)=>{nameHandler(event)}}></input>
-            {name}
+            {/* {name} */}
         </div>
         <div>
             <label>EMAIL :</label>
             <input type='text' onChange={(e)=>{emailHandler(e)}}></input>
-            {email}
+            {/* {email} */}
         </div>
         <div>
             <label>Address :</label>
             <input type='text' onChange={(event)=>{setaddress(event.target.value)}}></input>
-            {address}
+            {/* {address} */}
         </div>
+        <button onClick={()=>{setisClicked(true)}}>CLICK</button>
+
+        {
+        isClicked == true && 
+        <div>
+            <h1>OUTPUT</h1>
+            <h1>Name = {name}</h1>
+            <h2>Email = {email}</h2>
+            <h3>Address ={address}</h3>
+        </div>
+    }
+        
     </div>
   )
 }
