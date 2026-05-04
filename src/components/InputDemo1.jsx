@@ -31,10 +31,15 @@ export const InputDemo1 = () => {
             <input type='text' onChange={(e)=>{emailHandler(e)}}></input>
             {/* {email} */}
         </div>
+        
         <div>
             <label>Address :</label>
             <input type='text' onChange={(event)=>{setaddress(event.target.value)}}></input>
             {/* {address} */}
+        </div>
+        <div>
+            <label>COLOR</label>
+            <input type='color'></input>
         </div>
         <button onClick={()=>{setisClicked(true)}}>CLICK</button>
 
