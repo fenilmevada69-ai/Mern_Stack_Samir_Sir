@@ -20,3 +20,20 @@ export const UseStateDemo1 = () => {
     </div>
   )
 }
+
+
+
+// import React from 'react'
+// export const UseStateDemo1 = () => {
+//     var count = 0; 
+//     const increament = () => {
+//       count++;
+//     }
+//     return (
+//         <div style={{textAlign: "center"}}>
+//             <h1>USESTATEDEMO 1</h1>
+//             <h2>{count}</h2>       
+//             <button onClick={increament}>Increase Count</button>
+//         </div>
+//     );
+// }
