@@ -29,7 +29,7 @@ import { Student } from "./components/Student";
 import { TableDemo } from "./components/TableDemo";
 import { InputDemo1 } from "./components/InputDemo1";
 import { InputDemo2 } from "./components/InputDemo2";
-import  InputDemo3  from "./components/InputDemo3";
+import { InputDemo3 }  from "./components/InputDemo3";
 
 function App() {
  

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-function InputDemo3() {
+export function InputDemo3() {
 
-  // Nested Array
+
     const countryData = [
         ["India", ["Gujarat", "Rajasthan", "Maharashtra"]],
         ["Russia", ["Moscow", "Saint Petersburg"]],
@@ -17,7 +17,7 @@ function InputDemo3() {
             <div>
                 <label>Country: </label>
                 {/* Country Dropdown */}
-                <select value={selectedCountry} name="country" id="country" onChange={(e) => {setSelectedCountry(e.target.value)}}>
+                <select value={countryData[selectedCountry][0]} name="country" id="country" onChange={(e) => {setSelectedCountry(e.target.value)}}>
                     {
                         countryData.map((arr,index) => {
                             return <option key={index} value={index}>{arr[0]}</option>
@@ -39,5 +39,3 @@ function InputDemo3() {
         </div>
     );
 }   
-
-export default InputDemo3;
