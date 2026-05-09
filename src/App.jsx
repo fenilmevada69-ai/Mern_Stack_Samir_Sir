@@ -30,6 +30,8 @@ import { TableDemo } from "./components/TableDemo";
 import { InputDemo1 } from "./components/InputDemo1";
 import { InputDemo2 } from "./components/InputDemo2";
 import { InputDemo3 }  from "./components/InputDemo3";
+// import { FormDemo2 }  from "./components/Form/FormDemo2";
+import { TaskDemo }  from "./components/Form/TaskDemo";
 
 function App() {
  
@@ -53,11 +55,12 @@ function App() {
           <Route path="/inputdemo1" element = {<InputDemo1/>}></Route>
           <Route path="/inputdemo2" element = {<InputDemo2/>}></Route>
           <Route path="/inputdemo3" element = {<InputDemo3/>}></Route>
+          {/* <Route path="/formdemo2" element = {<FormDemo2/>}></Route>           */}
+          <Route path="/taskdemo" element = {<TaskDemo/>}></Route>          
           {/* <Route path="/watch" element = {<Watch/>}></Route> */}
           {/* <Route path="/watch/dhurandhar" element = {<Watch/>}></Route> */}
           <Route path="/watch/:name" element = {<Watch/>}></Route>
           <Route path="/*" element = {<Error404/>}></Route>
-          
         </Routes>
     </div>
   );
