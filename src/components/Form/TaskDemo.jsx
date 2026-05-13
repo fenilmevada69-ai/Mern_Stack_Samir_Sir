@@ -60,6 +60,7 @@ export const TaskDemo = () => {
                     Dance: {" "}
                     <input type="checkbox" value="dance" {...register("hobbies")} />
                 </div>
+            
                 <div>
                     {/*8*/}
                     <label htmlFor="country">SELECT COUNTRY: {" "}</label>
