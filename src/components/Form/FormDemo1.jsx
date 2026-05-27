@@ -42,7 +42,6 @@ export const FormDemo1 = () => {
                 <option value="india">INDIA</option>
                 <option value="china">CHINA</option>
                 <option value="russia">RUS</option>
-
             </select>
         </div>
         <div>
