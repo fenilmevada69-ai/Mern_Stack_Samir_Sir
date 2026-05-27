@@ -1,37 +1,40 @@
-import React from "react";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+import React from 'react';
+import {useForm} from 'react-hook-form';
+
 export const TaskDemo = () => {
-    const {register, handleSubmit, formState:{errors}} = useForm();
+    const {register, handleSubmit, formState: {errors}} = useForm();
     const submitHandler = (data) => {
         console.log(data);
     }
-
-    const validateSchema = {
+    const validations = {
         nameValidator : {
             required : {
-                value: true,
-                message: "pls fill text..."
+                value : true,
+                message : "pls fill this input..."
             },
-            minLength:{
-                value:3,
-                message:"min len 3"
+            minLength : {
+                value : 3,
+                message : "min lenght is 3"
             },
-            maxLength:{
-                value:10,
-                message:"max len 10"
+            maxLength : {
+                value : 10,
+                message : "max lenght is 10"
             }
         }
     }
-    return (    
+    return (
         <div style={{textAlign: "center"}}>
-            <br/>
+            <br />
             <form onSubmit={handleSubmit(submitHandler)}>
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" {...register("name", validateSchema.nameValidator)}/><br/><br/>
-                {errors.name?.message && <p>{errors.name.message}</p>}
-                <input type="submit"/>
+                <div>
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id='name' {...register("name", validations.nameValidator)}/>
+                    {errors.name?.message && <p style={{color:"red"}}>{errors.name.message}*</p>}
+                </div>
+                <div>
+                    <input type="submit"/>
+                </div>
             </form>
-        </div>        
+        </div>
     )
 }
