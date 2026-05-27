@@ -3,7 +3,7 @@ import React from 'react';
 
 export const FormDemo4 = () => {
     const rfcodelist = ["insta", "facebook", "justdial", "new paper"];
-    const {register, handleSubmit, formState: {error}} = useForm();
+    const {register, handleSubmit, formState: {errors}} = useForm();
     const submitHandler = () => {
         console.log("data Submited");
     }
@@ -23,7 +23,7 @@ export const FormDemo4 = () => {
             validate : (params) => {
                 //console.log("params",params)
                 //return params=="facebook" || "not valid ref code"
-                return refcodeList.includes(params) || "not valid ref code"
+                return rfcodeList.includes(params) || "not valid ref code"
             }
         },
         hobbiesValidator : {
