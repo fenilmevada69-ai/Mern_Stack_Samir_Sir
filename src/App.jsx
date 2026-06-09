@@ -30,10 +30,15 @@ import { TableDemo } from "./components/TableDemo";
 import { InputDemo1 } from "./components/InputDemo1";
 import { InputDemo2 } from "./components/InputDemo2";
 import { InputDemo3 }  from "./components/InputDemo3";
-// import { FormDemo1 }  from "./components/Form/FormDemo1";
-// import { FormDemo2 }  from "./components/Form/FormDemo2";
-// import { FormDemo3 }  from "./components/Form/FormDemo3";
+import { FormDemo1 }  from "./components/Form/FormDemo1";
+import { FormDemo2 }  from "./components/Form/FormDemo2";
+import { FormDemo3 }  from "./components/Form/FormDemo3";
 import { TaskDemo }  from "./components/Form/TaskDemo";
+import { APIDemo1 } from "./components/API/APIDemo1";
+import { APIDemo2 } from "./components/API/APIDemo2";
+import { APIDemo3 } from "./components/API/APIDemo3";
+import { OmdbSearch } from "./components/API/OmdbSearch";
+import { MovieDetails } from "./components/API/MovieDetails";
 
 function App() {
  
@@ -57,13 +62,18 @@ function App() {
           <Route path="/inputdemo1" element = {<InputDemo1/>}></Route>
           <Route path="/inputdemo2" element = {<InputDemo2/>}></Route>
           <Route path="/inputdemo3" element = {<InputDemo3/>}></Route>
-          {/* <Route path="/formdemo1" element = {<FormDemo1/>}></Route>           */}
-          {/* <Route path="/formdemo2" element = {<FormDemo2/>}></Route>           */}
-          {/* <Route path="/formdemo3" element = {<FormDemo3/>}></Route>           */}
-          <Route path="/taskdemo" element = {<TaskDemo/>}></Route>          
-          {/* <Route path="/watch" element = {<Watch/>}></Route> */}
-          {/* <Route path="/watch/dhurandhar" element = {<Watch/>}></Route> */}
+          <Route path="/formdemo1" element = {<FormDemo1/>}></Route>          
+          <Route path="/formdemo2" element = {<FormDemo2/>}></Route>          
+          <Route path="/formdemo3" element = {<FormDemo3/>}></Route>          
+          <Route path="/taskdemo" element = {<TaskDemo/>}></Route>
+          <Route path="/movie/:imdbID" element={<MovieDetails />} />          
+          <Route path="/watch" element = {<Watch/>}></Route>
+          <Route path="/watch/dhurandhar" element = {<Watch/>}></Route>
           <Route path="/watch/:name" element = {<Watch/>}></Route>
+          <Route path="/omdbsearch" element = {<OmdbSearch/>}></Route>
+          <Route path="/apidemo1" element = {<APIDemo1/>}></Route>
+          <Route path="/apidemo2" element = {<APIDemo2/>}></Route>
+          <Route path="/apidemo3" element = {<APIDemo3/>}></Route>
           <Route path="/*" element = {<Error404/>}></Route>
         </Routes>
     </div>
