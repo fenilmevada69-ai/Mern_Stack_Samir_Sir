@@ -70,10 +70,10 @@ function App() {
           <Route path="/watch" element = {<Watch/>}></Route>
           <Route path="/watch/dhurandhar" element = {<Watch/>}></Route>
           <Route path="/watch/:name" element = {<Watch/>}></Route>
-          <Route path="/omdbsearch" element = {<OmdbSearch/>}></Route>
           <Route path="/apidemo1" element = {<APIDemo1/>}></Route>
           <Route path="/apidemo2" element = {<APIDemo2/>}></Route>
           <Route path="/apidemo3" element = {<APIDemo3/>}></Route>
+          <Route path="/omdbsearch" element = {<OmdbSearch/>}></Route>
           <Route path="/*" element = {<Error404/>}></Route>
         </Routes>
     </div>
