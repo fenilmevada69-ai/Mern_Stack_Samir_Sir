@@ -1,7 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-//import './App.css'
 import { HeaderComponent } from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
 import { ContentComponent } from "./components/ContentComponent";
@@ -37,14 +34,28 @@ import { TaskDemo }  from "./components/Form/TaskDemo";
 import { APIDemo1 } from "./components/API/APIDemo1";
 import { APIDemo2 } from "./components/API/APIDemo2";
 import { APIDemo3 } from "./components/API/APIDemo3";
+import { APIDemo4 } from "./components/API/APIDemo4";
 import { OmdbSearch } from "./components/API/OmdbSearch";
 import { MovieDetails } from "./components/API/MovieDetails";
+import {Bounce, ToastContainer} from "react-toastify";
+
 
 function App() {
- 
-
   return (
     <div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
       <Navbar></Navbar>
         <Routes>
           <Route path="/" element ={<HomeComponent/>}></Route>
@@ -73,6 +84,7 @@ function App() {
           <Route path="/apidemo1" element = {<APIDemo1/>}></Route>
           <Route path="/apidemo2" element = {<APIDemo2/>}></Route>
           <Route path="/apidemo3" element = {<APIDemo3/>}></Route>
+          <Route path="/apidemo4" element = {<APIDemo4/>}></Route>
           <Route path="/omdbsearch" element = {<OmdbSearch/>}></Route>
           <Route path="/*" element = {<Error404/>}></Route>
         </Routes>

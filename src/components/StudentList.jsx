@@ -1,4 +1,3 @@
-import React from 'react'
 
 export const StudentList = (props) => {
     //{studentData:[],deleteStudent:func}

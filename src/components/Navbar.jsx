@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-
 export const Navbar = () => {
   return (
     <div>
@@ -8,21 +6,9 @@ export const Navbar = () => {
         <a className="navbar-brand" href="#">
           Navbar
         </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            {/* <li className="nav-item active">
+            <li className="nav-item active">
               <Link className="nav-link" to="/netflixhome">
                 Netflix Home 
               </Link>
@@ -96,27 +82,32 @@ export const Navbar = () => {
               <Link className="nav-link" to="/taskdemo">
                 taskDemo
               </Link> 
-            </li> */}
+            </li>
 
             <li className="nav-item active">
               <Link className="nav-link" to="/apidemo1">
                 API DEMO1
-              </Link> 
+              </Link>
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/apidemo2">
                 API DEMO2
-              </Link> 
+              </Link>
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/apidemo3">
                 API DEMO3
-              </Link> 
+              </Link>
+            </li>
+            <li className="nav-item active">
+              <Link className="nav-link" to="/apidemo4">
+                API DEMO4
+              </Link>
             </li>
             <li className="nav-item active">
               <Link className="nav-link" to="/omdbsearch">
                 OMDB Search
-              </Link> 
+              </Link>
             </li>
           </ul>
         </div>
